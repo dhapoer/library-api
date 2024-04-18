@@ -1,3 +1,7 @@
 node_modules/
 .env
 queries.http
+.vercel
+
+# Local Netlify folder
+.netlify

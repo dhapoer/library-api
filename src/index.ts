@@ -160,7 +160,7 @@ app.get("/api/category/:id", async (request, response) => {
 });
 
 // Post a category
-app.post("/category/create", async (request, response) => {
+app.post("/api/category/create", async (request, response) => {
   if (!request.headers.authorization) return response.status(403).json({ error: 'No credentials sent!' });
   try {
     const userId = await getUserIdFromAuthToken(request.headers.authorization)
